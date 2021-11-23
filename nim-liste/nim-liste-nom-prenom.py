@@ -57,7 +57,7 @@ l[1] = 5
 l.append(3)
 
 # - l.append permet d'ajouter un élément à la fin d'une liste.
-# - python possible un if pour les "expressions" sur la ligne
+# - python possède un if pour les "expressions" utilisé sur la ligne
 #       precedent = 0 if i == 0 else position[i-1]
 
 # Question 2: Explique la différence entre les deux if de python
@@ -87,7 +87,7 @@ def joue(position,coup):
 # ....
 
 # Question 7: la fonction suivante demande un coup à un joueur humain.
-# modifie la pour qu'elle redemande un coup si la réponse du joueur
+# modifie la pour qu'elle redemande un coup si la réponse du joueur
 # est invalide.
 
 def coups_humain(position,coups):
@@ -104,9 +104,9 @@ def coups_humain(position,coups):
     return(position)
 
 # Question 8: la fonction suivante joue une partie entre deux joueurs
-# humain jusqu'à la fin. Complète la.
+# humains jusqu'à la fin. Complète la.
 def joue_partie(position):
-    """joue une partie complète avec deux joueurs humain"""
+    """joue une partie complète avec deux joueurs humains"""
     coups = coups_possibles(position)
     while(coups != []):
         position = None # à modifier
@@ -121,12 +121,11 @@ def joue_partie(position):
 # joue_partie([1,3,5,7],"Tamatoa","Simon") pour jouer une partie
 # entre Simon et Tamatoa, si Tamatoa commence.
 # aide: en python, on peut écrire (i,j) = (j,i) pour échanger
-# la valeur de deux variables.
+# la valeur de deux variables.
 
 # Question 10: crée une fonction joue_aleatoire, qui choisit
 # un coup au hasard. Cherche sur internet pour trouver comment
-# choisir un élément au hasard dans une liste
+# choisir un élément au hasard dans une liste
 
 # Question 11: modifie joue_partie pour qu'un humain puisse jouer
-# contre l'ordinateur qui joue un coup au hasard. 
-
+# contre l'ordinateur qui joue un coup au hasard.
